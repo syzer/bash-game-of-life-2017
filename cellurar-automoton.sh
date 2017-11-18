@@ -2,12 +2,24 @@
 
 function cell () {
 	position=$1
-    return $position
+	# get position
+	# :(
+	get=function poition () {
+        return 1
+    }
+    return $get
 }
 
 function world () {
 	[ "$1" = "register" ] && cell $3
 	pass
+}
+
+'dzfsdafds'
+
+function () {
+
+
 }
 
 # test 0
