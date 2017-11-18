@@ -2,14 +2,15 @@
 
 function cell () {
     state=$1
-    return state
+    return $state
 }
 
 
 # test
-empty=`cell 1`
-echo ${empty}
+cell 1
+alive=$?
+echo "1 is alive" ${alive}
 
-[ $empty -eq 1 ] || exit 1
+[ $alive -eq 0 ] || exit 1
 
 echo "passed"
